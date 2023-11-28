@@ -1,7 +1,19 @@
-* {
+*{
     border-style: solid;
     border-width: 1px;
+
 }
+
+root{
+    --khaki: #988F71ff;
+    --ash-gray: #C3D2CFff;
+    --ecru: #D2AD61ff;
+    --ecru-2: #C4B485ff;
+    --ash-gray-2: #A7B8B2ff;
+}
+
+
+
 html, body {
     height: 100%;
     margin: 0;
@@ -15,23 +27,60 @@ body{
 div{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .left-container{
+    position: relative;
     width: 40%;
+    height: 100%;
     border-color: red;
     justify-content: space-between;
+    overflow: hidden;
+}
+
+.left-container *{
+    border-style: none;
 }
 
 .left-container .logo{
     position: relative;
-    top: 20%;
+    top: 25%;
     flex-direction: row;
     justify-content: center;
 }
 .left-container .footer{
-    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-blend-mode: color;
+
 }
+.background-image{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+    
+}
+.logo>p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: rgb(58, 88, 105);
+    background: -webkit-linear-gradient(rgba(60, 60, 94, 0.842), rgba(44, 73, 80, 0.712));
+    background-clip: unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0px;
+    margin: 0px;
+}
+.logo{
+    width: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.432);
+    padding: 1rem;
+}
+
 
 .right-container{
     width: 60%;
