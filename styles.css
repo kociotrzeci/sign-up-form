@@ -1,15 +1,13 @@
 *{
-    border-style: solid;
-    border-width: 1px;
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-root{
-    --khaki: #988F71ff;
-    --ash-gray: #C3D2CFff;
-    --ecru: #D2AD61ff;
-    --ecru-2: #C4B485ff;
-    --ash-gray-2: #A7B8B2ff;
+:root{
+    --cadet-gray: rgb(84, 121, 141);
+    --seasalt: rgb(250, 248, 246);
+    --isabelline: #EEEBE6ff;
+    --champagne-pink: rgb(240, 240, 240);
+    --silver: #C4C5BBff;
 }
 
 
@@ -57,9 +55,10 @@ div{
 }
 .background-image{
     position: absolute;
-    width: 100%;
+    height: 150%;
     z-index: -1;
     overflow: hidden;
+    left: -20%;
     
 }
 .logo>p{
@@ -88,21 +87,42 @@ div{
 
 .right-container > *{
     flex-grow: 1;
+    background-color: var(--champagne-pink);
 }
-
+form > *{
+    background-color: var(--seasalt);
+}
 .flex-row{
     flex-direction: row;
 }
 form{
     height: 40%;
 }
+.form-gap{
+    gap: 3rem;
+}
+.column{
+    gap: 2rem;
+    margin: 2rem;
+}
+legend{
 
+}
+form div{
 
-.text-container{
+}
+.form-container{
+    padding: 1rem;
 }
 
-
-
+.text-container p{
+    position: relative;
+    font-size: 2rem;
+    width: 80%;
+    height: 20%;
+    top: 10%;
+    color: var(--cadet-gray);
+}
 
 
 .right-container > .footer{
