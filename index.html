@@ -20,44 +20,49 @@
     </div>
     <div class="right-container">
         <div class="background-gray text-container">
-            <p>This is not real online service! You know you need something like this in your life to realize your deepest dreams. Sign up now to get started.</p>
-            <p>You know you want to</p>
+            <p>This is not real online service! You <i>know</i> you need something like this in your life to realize your <i>deepest dreams</i>. Sign up now to get started.</p>
+            <p>You <i>know</i> you want to</p>
         </div>
-        <form action="post">
-            <legend>Let's do this!</legend>
-            <div class="flex-row form-gap">
-                <div class="column">
-                    <div class="verse">
-                        <label for="first-name">FIRST NAME:</label>
-                        <input type="text" name="first-name" id="first-name">
+        <div class="form-container box-shadow">
+            <form action="post">
+                <legend>Let's do this!</legend>
+                <div class="flex-row">
+                    <div class="column">
+                        <div class="verse">
+                            <label for="first-name">FIRST NAME:</label>
+                            <input type="text" name="first-name" id="first-name">
+                        </div>
+                        <div class="verse">
+                            <label for="email">EMAIL:</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div class="verse">
+                            <label for="password">PASSWORD:</label>
+                            <input type="password" name="password" id="password">
+                        </div>
                     </div>
-                    <div class="verse">
-                        <label for="email">EMAIL:</label>
-                        <input type="text" name="email" id="email">
-                    </div>
-                    <div class="verse">
-                        <label for="password">PASSWORD:</label>
-                        <input type="password" name="password" id="password">
+                    <div class="column">
+                        <div class="verse">
+                            <label for="last-name">LAST NAME:</label>
+                            <input type="text" name="last-name" id="last-name">
+                        </div>
+                        <div class="verse">
+                            <label for="phone-number">PHONE NUMBER:</label>
+                            <input type="text" name="phone-number" id="phone-number">
+                        </div>
+                        <div class="verse">
+                            <label for="confirm-password">CONFIRM PASSWORD:</label>
+                            <input type="password" name="confirm-password" id="confirm-password">
+                        </div>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="verse">
-                        <label for="last-name">LAST NAME:</label>
-                        <input type="text" name="last-name" id="last-name">
-                    </div>
-                    <div class="verse">
-                        <label for="phone-number">PHONE NUMBER:</label>
-                        <input type="text" name="phone-number" id="phone-number">
-                    </div>
-                    <div class="verse">
-                        <label for="confirm-password">CONFIRM PASSWORD:</label>
-                        <input type="password" name="confirm-password" id="confirm-password">
-                    </div>
-                </div>
-            </div>
-        </form>
-        <div class="background-gray"><button>pushy button</button></div>
-        <div class="footer">made by kociotrzeci</div>
+            </form>
+        </div>
+        <div id="bottom">
+            <button class="box-shadow">Create Account</button>
+            <div class="footer">Already have an account? Log in!</div>
+        </div>
+
     </div>
 </body>
 
