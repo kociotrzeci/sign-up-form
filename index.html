@@ -15,7 +15,7 @@
             <p>SIGN UP FORM</p>
         </div>
         <div class="footer">Photo by&nbsp
-            <a href="https://www.artstation.com/jakubrozalski">Jakub Różalski</a>
+            <a href="https://unsplash.com/@ymchen">Ian Chen</a>
         </div>
     </div>
     <div class="right-container">
@@ -24,43 +24,66 @@
             <p>You <i>know</i> you want to</p>
         </div>
         <div class="form-container box-shadow">
-            <form action="post">
+            <form action="#" id="register-form">
                 <legend>Let's do this!</legend>
                 <div class="flex-row">
                     <div class="column">
                         <div class="verse">
-                            <label for="first-name">FIRST NAME:</label>
-                            <input type="text" name="first-name" id="first-name">
+                            <label for="first-name">*FIRST NAME:</label>
+                            <input 
+                            type="text" 
+                            name="first-name" 
+                            id="first-name"
+                            required>
                         </div>
                         <div class="verse">
-                            <label for="email">EMAIL:</label>
-                            <input type="text" name="email" id="email">
+                            <label for="email">*EMAIL:</label>
+                            <input 
+                            type="text" 
+                            name="email" 
+                            id="email" 
+                            required>
                         </div>
                         <div class="verse">
-                            <label for="password">PASSWORD:</label>
-                            <input type="password" name="password" id="password">
+                            <label for="password">*PASSWORD:</label>
+                            <input 
+                            type="password" 
+                            name="password" 
+                            id="password">
                         </div>
                     </div>
                     <div class="column">
                         <div class="verse">
                             <label for="last-name">LAST NAME:</label>
-                            <input type="text" name="last-name" id="last-name">
+                            <input 
+                            type="text" 
+                            name="last-name" 
+                            id="last-name" >
                         </div>
                         <div class="verse">
                             <label for="phone-number">PHONE NUMBER:</label>
-                            <input type="text" name="phone-number" id="phone-number">
+                            <input 
+                            type="text" 
+                            name="phone-number" 
+                            id="phone-number"
+                            minlength="9">
+            
                         </div>
                         <div class="verse">
-                            <label for="confirm-password">CONFIRM PASSWORD:</label>
-                            <input type="password" name="confirm-password" id="confirm-password">
+                            <label for="confirm-password">*CONFIRM PASSWORD:</label>
+                            <input 
+                            type="password" 
+                            name="confirm-password" 
+                            id="confirm-password" 
+                            required>
                         </div>
                     </div>
                 </div>
             </form>
         </div>
         <div id="bottom">
-            <button class="box-shadow">Create Account</button>
-            <div class="footer">Already have an account? Log in!</div>
+            <button type="submit" form="register-form" class="box-shadow">Create Account</button>
+            <div class="footer flex-row">Already have an account?&nbsp<a href=""> Log in!</a></div>
         </div>
 
     </div>
